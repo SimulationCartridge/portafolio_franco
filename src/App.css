@@ -1,0 +1,50 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  width: auto;
+  height: 30px;
+  background-color: none;
+}
+
+.fullscreen{
+  background-image: url('assets/background.avif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-container{
+  width: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-me{
+  display: flex;
+  gap: 16px;
+}
+
+.about-me > div{
+  flex: 1;
+}
+
+.card-about-me{
+display: flex;
+flex-direction: column;
+justify-content:last baseline;
+align-items: center;
+}
+
+.h3-title{
+  font-size: 4em;
+}
+
+.p-about-me{
+  font-size: 2.5em;
+  text-align:justify;
+}
