@@ -3,10 +3,22 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 15px;
+  column-gap: 15px;
+  margin: auto 0;
   width: auto;
   height: 30px;
   background-color: none;
+}
+
+.links{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+
+.links:nth-child(4){
+  padding-right: 15px;
 }
 
 .fullscreen{
@@ -18,11 +30,35 @@
 
 .header-container{
   width: auto;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.name-person{
+  padding: 20px;
+  margin: 0;
+}
+
+.h1-name, h1 {
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+  text-shadow: 3px 5px 0px #eb452b, 
+                  6px 8px 0px #efa032, 
+                  9px 11px 0px #46b59b, 
+                  12px 15px 0px #017e7f;
+  color:aliceblue;
+                }
+
+.h3-position{
+  font-size: 1.5rem;
+  margin: 10px;
+  color: rgb(246, 245, 244);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
 
 .about-me{
   display: flex;
@@ -104,4 +140,38 @@ align-items: center;
 .contenedor{
   width: 100%;
   height: 600px;
+}
+
+
+
+.clients-container{
+ width: 100%;
+ height: 400px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ overflow-x: auto;
+ scrollbar-width: none;
+ padding: 1.5em 0;
+ column-gap: 20px;
+}
+
+.client-card{
+  position: relative;
+  background-color: black;
+  flex: 0 0 350px;
+  height: 250px;
+  overflow: hidden;
+  margin-left: 1.5rem;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px
+              rgba(0,0,0,0.08);
+}
+
+.client-name{
+  color: aliceblue;
+}
+
+.client-text{
+  color: aliceblue;
 }
