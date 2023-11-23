@@ -21,7 +21,7 @@ const SlideShow = () => {
 
 
   return (
-    <div className='contenedor'>
+    <div className='main-container-slide'>
     <div className="slideshow-container">
       {visibleImages.map((image, index) => (
         <div key={index} className="slide">
