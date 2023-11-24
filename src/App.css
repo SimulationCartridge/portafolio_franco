@@ -5,13 +5,13 @@
   padding: 10px;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 600px) {
   .navbar {
-    justify-content: center; 
-    flex-wrap: wrap;
+    flex-direction: row; /* Cambiar a dirección de columna en pantallas pequeñas */
+    align-items: center;
+    justify-content: center;   /* Alinea los elementos a la derecha en pantallas pequeñas */
   }
 }
-
 
 .links {
   text-decoration: none;
@@ -21,11 +21,6 @@
   font-size: 1.225rem;
 }
 
-@media only screen and (max-width: 414px){
-  .links{
-    font-size: 1rem;
-  }
-}
 
 .links:hover {
   color: #eb452b;
@@ -55,30 +50,15 @@
   height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content:center;
-
+  justify-content: center;
+  border: 1px solid black;
 }
-
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: #ccc; /* Puedes cambiar el color según tus preferencias */
-  margin: 50px 0; /* Ajusta el margen según sea necesario */
-}
-
-
-.name-person{
-  padding: 20px;
-  margin: 0;
-}
-
-
 
 
 .h1-name, h1 {
   font-family: 'Edu VIC WA NT Beginner', cursive;
 font-family: 'Hind', sans-serif;
-  font-size: 5em;
+  font-size: 6.5em;
   padding: 0;
   margin: 0;
   text-shadow: 3px 5px 0px #eb472e, 
@@ -88,45 +68,110 @@ font-family: 'Hind', sans-serif;
   color:rgb(231, 231, 231);
                 }
 
-.h3-title{
-  font-size: 2.5rem;
-  color: rgb(246, 245, 244);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  margin: 0;
-  padding: 20px;
+
+@media only screen and (max-width: 600px) {
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .h1-name, h1 {
+    font-size: 3.5em;
+  }
 }
 
 
 .about-me{
   display: flex;
-  gap: 10px;
-  margin-bottom: 70px;
+  margin: 0;
+  border: 1px solid black;
 }
 
+@media only screen and (max-width: 600px) {
+  .about-me{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.profile-picture-container{
+  width: 50%;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  .profile-picture-container{
+   width: 100%;
+   height: auto;
+  }
+}
+
+
+.profile-picture{
+  height: 80%;
+  width: 80%;
+}
 
 .card-about-me{
-display: flex;
-flex-direction: column;
-justify-content:baseline;
-align-items: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card-about-me{
+     width: 100%;
+     height: auto;
+    }
+  }
+  
+              
+
+.h3-title{
+  font-size: 3.5rem;
+  color: rgb(246, 245, 244);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding-top: 30px;
 }
 
-
 .p-about-me{
-  font-size: 2em;
+  font-size: 2.5em;
   text-align:left;
+  margin: auto 0;
   padding: 50px;
 }
 
 
+@media only screen and (max-width: 600px) {
+  .p-about-me{
+    font-size: 1.5em;
+    height: 50%;
+  }
+}
+
 /* SlideShow.css */
 .main-container-slide{
-  height: 500px;
-  align-items: center;
+  height: 700px;
+  border: 1px solid black;
 }
 
 
 .slideshow-container {
+  height: 750px;
+  border: 1px solid black;
   position: relative;
   display: grid;
   grid-template-columns: repeat(
@@ -134,7 +179,7 @@ align-items: center;
   minmax(400px, 1fr)
   );
   gap: 2px;
-  max-width: 1450px;
+  max-width: 1500px;
   margin: 0 auto;
   align-content: center;
   justify-content: center;
@@ -161,7 +206,7 @@ align-items: center;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 20px;
+  font-size: 50px;
   cursor: pointer;
   border: none;
   background: none;
@@ -169,11 +214,11 @@ align-items: center;
 }
 
 .prev {
-  left: 10px;
+  left: 0px;
 }
 
 .next {
-  right: 10px;
+  right: 0px;
 }
 
 
@@ -188,19 +233,18 @@ align-items: center;
 .clients-container{
  width: 100%;
  height: 400px;
+ border: 1px solid black;
  display: flex;
  align-items: center;
  justify-content: center;
- overflow-x: auto;
- scrollbar-width: none;
  padding: 1.5em 0;
  column-gap: 20px;
 }
 
 .client-card{
   position: relative;
-  background-color: black;
-  flex: 0 0 350px;
+  background-color: rgb(164, 161, 161);
+  flex: 0 0 400px;
   height: 250px;
   overflow: hidden;
   margin-left: 1.5rem;
